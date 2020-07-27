@@ -4,6 +4,7 @@ provider "aws" {
 
 resource "aws_vpc" "PyChainVPC" {
   cidr_block = "10.0.0.0/28"
+  # is there no way to DRY this out?
   tags = {
     Name     = "PyChain"
     Owner    = "Josh Hill"
